@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+    background-image: url(imagens/FUNDO.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Garante que a altura mínima seja a da tela */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px 40px; /* Reduzido para melhorar a responsividade */
+}
+
+.navbar .barra-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .barra-nav img {
+    margin-right: 10px;
+    width: 90px;
+    height: auto; 
+}
+
+.navbar button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Reduzido para melhorar a responsividade */
+    transition: color 0.3s;
+}
+
+.navbar button:hover {
+    color: #b33900; /* Cor do texto ao passar o mouse */
+    text-decoration: none;
+}
+
+.texto {
+    color: white;
+    
+    padding: 0px; /* Ajuste para não sobrepor */
+    margin-top: 250px; /* Ajuste para distância do navbar */
+}
+
+.texto .content {
+    max-width: 90%; /* Reduz a largura máxima para garantir margens */
+    margin: auto; /* Centraliza o conteúdo */
+}
+
+.texto h1 {
+    font-size: 35px; /* Tamanho de fonte ajustado para evitar sobreposição */
+    margin-bottom: 5px; /* Distância entre h1 e p */
+}
+
+.texto p {
+    font-size: 30px; /* Tamanho de fonte ajustado para legibilidade */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: 90px;
+        flex-direction: column;
+    }
+
+    .navbar button {
+        font-size: 28px;
+    }
+
+    .texto h1 {
+        font-size: 24px; /* Ajustado para telas menores */
+    }
+
+    .texto p {
+        font-size: 20px; /* Ajustado para telas menores */
+    }
+
+}
